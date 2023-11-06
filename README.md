@@ -8,6 +8,12 @@ Install NvChad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 ```
 
+Get this config
+
+```bash
+git clone https://github.com/devOpifex/setup ~/.config/nvim/lua/custom
+```
+
 nvm for node version management (default Linux apt quite old)
 
 ```bash
