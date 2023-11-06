@@ -32,6 +32,7 @@ R packages
 ```r
 install.packages(c("languageserver", "lintr"))
 remotes::install_github("gadenbuie/grkstyle")
+remotes::install_github("devOpifex/r.nvim")
 ```
 
 Mason
