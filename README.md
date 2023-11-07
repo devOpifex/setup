@@ -8,6 +8,8 @@ Install NvChad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 ```
 
+Pick a [nerdfont](https://www.nerdfonts.com/) and set as terminal font.
+
 Get this config
 
 ```bash
