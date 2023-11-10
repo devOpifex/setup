@@ -5,23 +5,23 @@ require("conform").formatters.styler = {
     description = "R formatter.",
   },
   command = util.find_executable({"usr/bin/"}, "R"),
-  args = {"-s", "-e", "r.nvim::format()", "--args", "$FILENAME", "grk"},
+  args = {"-s", "-e", "r.nvim::format()", "--args", "$FILENAME"},
+  stdin = false,
 }
 
 local formatters = {
-  javascript = {"eslint_d", "prettier", },
-  typescript = {"eslint_d", "prettier",  },
+  javascript = {"eslint_d", "prettierd", },
+  typescript = {"eslint_d", "prettierd",  },
   go = { "gofmt", },
   r = { "styler", },
+  lue = { "stylua" }
 }
 
 require("conform").setup({
   formatters_by_ft = formatters,
+  format_on_save = {
+    timeout_ms = 2000,
+    lsp_fallback = true,
+  },
 })
 
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*",
-  callback = function(args)
-    require("conform").format({ async = true, bufnr = args.buf })
-  end,
-})
