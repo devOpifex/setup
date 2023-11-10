@@ -14,7 +14,7 @@ local formatters = {
   typescript = {"eslint_d", "prettierd",  },
   go = { "gofmt", },
   r = { "styler", },
-  lue = { "stylua" }
+  lua = { "stylua" }
 }
 
 require("conform").setup({
