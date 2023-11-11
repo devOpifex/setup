@@ -3,7 +3,7 @@ local plugins = {
     "neovim/nvim-lspconfig",
     dependencies = {
       "stevearc/conform.nvim",
-      event = { "BufWritePre" },
+      event = { "BufWritePre", "BufWritePost" },
       cmd = { "ConformInfo" },
       config = function()
         require "custom.configs.lsps"
@@ -13,10 +13,10 @@ local plugins = {
         vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
       end,
     },
-     config = function()
-        require "plugins.configs.lspconfig"
-        require "custom.configs.lspconfig"
-     end,
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
+    end,
   },
   {
     "zbirenbaum/copilot.lua",
