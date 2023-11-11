@@ -53,7 +53,7 @@ Mason
 TS
 
 ```
-:TSInstall html cssls gopls tsserver r_language_server
+:TSInstall html css go jsdoc r
 ```
 
 nerdfont
