@@ -33,7 +33,7 @@ nvm use 20.9.0
 Node packages
 
 ```bash
-npm install -g eslint_d @fsouza/prettierd typescript-language-server typescript @johnnymorganz/stylua-bin
+npm install -g eslint_d @fsouza/prettierd typescript-language-server typescript @johnnymorganz/stylua-bin vscode-langservers-extracted
 ```
 
 R packages
