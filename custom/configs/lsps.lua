@@ -1,7 +1,7 @@
 local formatters = {
   javascript = { "eslint_d", "prettierd" },
   typescript = { "eslint_d", "prettierd" },
-  go = { "gofmt" },
+  go = { "gofmt", "goimports" },
   r = { "styler" },
   lua = { "stylua" },
 }
