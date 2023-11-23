@@ -1,4 +1,4 @@
-# Setup
+# nvim setup
 
 Uses
 
